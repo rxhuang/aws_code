@@ -11,8 +11,6 @@ def main(event, context):
     first = str(lis).split(',')[0].split("'")[-2]
     last = str(lis).split(',')[1].split("'")[-2]
 
-
-    data = {'cidrSignature': cidr, 'firstAddress': first
-        , 'lastAddress': last, 'addressCount': len(lis)}
+    data = {'cidrSignature': cidr, 'firstAddress': first, 
+        'lastAddress': last, 'addressCount': len(lis)}
     return data
-
